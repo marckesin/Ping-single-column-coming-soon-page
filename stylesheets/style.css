@@ -1,7 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+button {
+  width: 30%;
+  padding: 0;
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  height: 35px;
+  border-radius: 35px;
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+form {
+  margin-bottom: 65px;
+}
+
+input {
+  border: 1px solid hsl(0, 0%, 59%);
+  border-radius: 20px;
+  width: 65%;
+  height: 35px;
+  margin-right: 12px;
+}
+
+main {
+  margin: auto;
+  width: 45%;
+  height: 95%;
+  background-color: whitesmoke;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container-form p {
+  margin-bottom: 30px;
+}
+
+.heading {
+  font-size: 38px;
+  color: hsl(209, 33%, 12%);
+  margin-bottom: 15px;
+}
+
+.heading span {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+}
+
+.logo {
+  margin: 25px auto;
+  width: 60px;
+  height: auto;
 }
