@@ -56,10 +56,24 @@ button {
   padding: 0;
   background-color: hsl(223, 87%, 63%);
   border: none;
-  height: 35px;
-  border-radius: 35px;
+  height: 50px;
+  border-radius: 40px;
   color: hsl(0, 0%, 100%);
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+button:hover {
+  background-color: hsla(223, 87%, 63%, 0.74);
+}
+
+button:active {
+  top: 2px;
 }
 
 footer {
@@ -70,19 +84,32 @@ form {
   margin-bottom: 65px;
 }
 
+i {
+  color: hsl(223, 87%, 63%);
+  margin: auto;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
 input {
   border: 1px solid hsl(0, 0%, 59%);
-  border-radius: 20px;
-  width: 65%;
-  height: 35px;
-  margin-right: 12px;
+  border-radius: 35px;
+  width: 95%;
+  height: 50px;
+  margin-right: 10px;
+  padding: 0 30px;
+  margin: 0;
+  font-size: 14px;
+}
+
+input[type="email"]:invalid {
+  outline-color: hsl(354, 100%, 66%);
 }
 
 main {
   margin: auto;
-  width: 45%;
-  height: 95%;
-  background-color: whitesmoke;
+  max-width: 640px;
+  height: 940px;
 }
 
 .attribution {
@@ -98,14 +125,24 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 5px;
 }
 
-.container-form p {
-  margin-bottom: 30px;
+.copyright {
+  font-size: 14px;
+  color: hsl(0, 0%, 59%);
+}
+
+.email {
+  flex: auto;
+}
+
+.email-container {
+  display: flex;
 }
 
 .heading {
-  font-size: 38px;
+  font-size: 45px;
   color: hsl(209, 33%, 12%);
   margin-bottom: 15px;
 }
@@ -115,8 +152,112 @@ main {
   font-weight: 300;
 }
 
+.invalid-email {
+  text-align: left;
+  font-style: italic;
+  font-size: 12px;
+  margin-left: 45px;
+  padding-top: 7px;
+  opacity: 1;
+  color: hsl(354, 100%, 66%);
+}
+
 .logo {
-  margin: 25px auto;
-  width: 60px;
+  margin: 40px auto;
+  width: 80px;
   height: auto;
+}
+
+.social-media {
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+  margin: 80px 0 30px;
+}
+
+.social-media a {
+  width: 35px;
+  height: 35px;
+  border: 1px solid hsl(221, 100%, 93%);
+  border-radius: 35px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-media a:hover {
+  background-color: hsl(223, 87%, 63%);
+}
+
+.social-media a:hover i {
+  color: hsl(0, 0%, 100%);
+}
+
+.subscribe {
+  margin-bottom: 36px;
+  font-size: 18px;
+}
+
+.valid-email {
+  text-align: left;
+  font-style: italic;
+  font-size: 12px;
+  margin-left: 45px;
+  padding-top: 7px;
+  opacity: 0;
+  color: hsl(354, 100%, 66%);
+}
+
+@media (max-width: 576px) {
+  a {
+    width: 35px;
+    height: 35px;
+  }
+  button {
+    width: 100%;
+    font-size: initial;
+    font-weight: 600;
+  }
+
+  form {
+    margin-bottom: 85px;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    /* margin-bottom: 15px; */
+  }
+
+  .container-form {
+    padding: 0 20px;
+  }
+
+  .container-form p {
+    font-size: initial;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+
+  .email p {
+    margin: 5px 0 15px;
+    text-align: center;
+  }
+
+  .email-container {
+    flex-direction: column;
+    padding: 0 25px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .logo {
+    width: 70px;
+  }
 }
