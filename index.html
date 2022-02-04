@@ -24,24 +24,36 @@
   <body>
     <div class="container">
       <main>
-        <div class="container-form">
+        <div>
           <img class="logo" src="images/logo.svg" alt="Logo Image" />
           <h1 class="heading"><span>We are launching</span> soon!</h1>
-          <p>Subscribe and get notified</p>
-          <form action="/" method="post">
-            <input type="email" name="email" id="email" />
-            <button>Notify Me</button>
+          <p class="subscribe">Subscribe and get notified</p>
+          <form class="email-container" action="#" method="post">
+            <div class="email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email address"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                value=""
+              />
+              <p id="message" class="valid-email">
+                Please provide a valid email address
+              </p>
+            </div>
+            <button type="submit" id="submit" value="">Notify Me</button>
           </form>
         </div>
         <div class="container-image">
           <img src="images/illustration-dashboard.png" alt="" />
         </div>
-        <div class="container-social">
+        <div class="social-media">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
-          <p>&copy; Copyright Ping. All rights reserved.</p>
         </div>
+        <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
       </main>
       <footer>
         <p class="attribution">
@@ -53,5 +65,6 @@
         </p>
       </footer>
     </div>
+    <script src="javascripts/script.js"></script>
   </body>
 </html>
