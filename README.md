@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/marckesin/ping-single-column-coming-soon-page/badge)](https://www.codefactor.io/repository/github/marckesin/ping-single-column-coming-soon-page) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=flat&logo=SASS&logoColor=white)
+
 # Frontend Mentor - Ping coming soon page solution
 
 This is a solution to the [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -40,6 +42,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- SASS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
