@@ -1,73 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-#root,
-#__next {
-  isolation: isolate;
-}
-
-* {
-  margin: 0;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  font-family: "Libre Franklin", sans-serif;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
+@use "reset";
 
 button {
   width: 30%;
   padding: 0;
-  background-color: #4f7df3;
+  background-color: hsl(223, 87%, 63%);
   border: none;
   height: 50px;
   border-radius: 40px;
-  color: white;
+  color: hsl(0, 0%, 100%);
   font-size: 14px;
   font-weight: 600;
-  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
   cursor: pointer;
   transition: 0.3s;
   position: relative;
 }
 
 button:hover {
-  background-color: rgba(79, 125, 243, 0.74);
+  background-color: hsla(223, 87%, 63%, 0.74);
 }
 
 button:active {
@@ -83,14 +34,14 @@ form {
 }
 
 i {
-  color: #4f7df3;
+  color: hsl(223, 87%, 63%);
   margin: auto;
   font-size: 16px;
   transition: 0.3s;
 }
 
 input {
-  border: 1px solid #969696;
+  border: 1px solid hsl(0, 0%, 59%);
   border-radius: 35px;
   width: 95%;
   height: 50px;
@@ -99,8 +50,8 @@ input {
   font-size: 14px;
 }
 
-input[type=email]:invalid {
-  outline-color: #ff5263;
+input[type="email"]:invalid {
+  outline-color: hsl(354, 100%, 66%);
 }
 
 main {
@@ -112,9 +63,10 @@ main {
 .attribution {
   font-size: 11px;
   text-align: center;
-}
-.attribution a {
-  color: #3e52a3;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
 }
 
 .container {
@@ -127,7 +79,7 @@ main {
 
 .copyright {
   font-size: 14px;
-  color: #969696;
+  color: hsl(0, 0%, 59%);
 }
 
 .email {
@@ -140,12 +92,12 @@ main {
 
 .heading {
   font-size: 45px;
-  color: #151f29;
+  color: hsl(209, 33%, 12%);
   margin-bottom: 15px;
 }
 
 .heading span {
-  color: #969696;
+  color: hsl(0, 0%, 59%);
   font-weight: 300;
 }
 
@@ -156,7 +108,7 @@ main {
   margin-left: 45px;
   padding-top: 7px;
   opacity: 1;
-  color: #ff5263;
+  color: hsl(354, 100%, 66%);
 }
 
 .logo {
@@ -170,25 +122,26 @@ main {
   gap: 13px;
   justify-content: center;
   margin: 80px 0 30px;
-}
-.social-media a {
-  width: 35px;
-  height: 35px;
-  border: 1px solid #dbe7ff;
-  border-radius: 35px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  transition: 0.3s;
+
+  a {
+    width: 35px;
+    height: 35px;
+    border: 1px solid hsl(221, 100%, 93%);
+    border-radius: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+  }
 }
 
 .social-media a:hover {
-  background-color: #4f7df3;
+  background-color: hsl(223, 87%, 63%);
 }
 
 .social-media a:hover i {
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
 .subscribe {
@@ -203,7 +156,7 @@ main {
   margin-left: 45px;
   padding-top: 7px;
   opacity: 0;
-  color: #ff5263;
+  color: hsl(354, 100%, 66%);
 }
 
 @media (max-width: 576px) {
@@ -229,9 +182,10 @@ main {
 
   .container-form {
     padding: 0 20px;
-  }
-  .container-form p {
-    font-size: initial;
+
+    p {
+      font-size: initial;
+    }
   }
 
   .copyright {
@@ -256,5 +210,3 @@ main {
     width: 70px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
