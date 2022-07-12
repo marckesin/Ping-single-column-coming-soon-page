@@ -10,8 +10,8 @@ button {
   color: hsl(0, 0%, 100%);
   font-size: 14px;
   font-weight: 600;
-  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+  box-shadow: hsla(240, 30%, 28%, 0.25) 0 6px 12px -2px,
+    hsla(0, 0%, 0%, 0.3) 0 3px 7px -3px;
   cursor: pointer;
   transition: 0.3s;
   position: relative;
@@ -133,11 +133,11 @@ main {
     align-items: center;
     text-decoration: none;
     transition: 0.3s;
-  }
-}
 
-.social-media a:hover {
-  background-color: hsl(223, 87%, 63%);
+    &:hover {
+      background-color: hsl(223, 87%, 63%);
+    }
+  }
 }
 
 .social-media a:hover i {
@@ -192,9 +192,11 @@ main {
     font-size: 12px;
   }
 
-  .email p {
-    margin: 5px 0 15px;
-    text-align: center;
+  .email {
+    p {
+      margin: 5px 0 15px;
+      text-align: center;
+    }
   }
 
   .email-container {

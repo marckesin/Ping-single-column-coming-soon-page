@@ -65,11 +65,9 @@ button {
   transition: 0.3s;
   position: relative;
 }
-
 button:hover {
   background-color: rgba(79, 125, 243, 0.74);
 }
-
 button:active {
   top: 2px;
 }
@@ -143,7 +141,6 @@ main {
   color: #151f29;
   margin-bottom: 15px;
 }
-
 .heading span {
   color: #969696;
   font-weight: 300;
@@ -182,7 +179,6 @@ main {
   text-decoration: none;
   transition: 0.3s;
 }
-
 .social-media a:hover {
   background-color: #4f7df3;
 }
