@@ -15,14 +15,14 @@ button {
   cursor: pointer;
   transition: 0.3s;
   position: relative;
-}
 
-button:hover {
-  background-color: hsla(223, 87%, 63%, 0.74);
-}
+  &:hover {
+    background-color: hsla(223, 87%, 63%, 0.74);
+  }
 
-button:active {
-  top: 2px;
+  &:active {
+    top: 2px;
+  }
 }
 
 footer {
@@ -94,11 +94,11 @@ main {
   font-size: 45px;
   color: hsl(209, 33%, 12%);
   margin-bottom: 15px;
-}
 
-.heading span {
-  color: hsl(0, 0%, 59%);
-  font-weight: 300;
+  span {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+  }
 }
 
 .invalid-email {
